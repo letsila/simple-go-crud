@@ -1,0 +1,16 @@
+body {
+	padding-top: 64px;
+	background-color: #f6f8fa;
+}
+
+.form-row {
+	margin: 32px 0;
+}
+
+a {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding-top: 16px;
+  text-transform: uppercase;
+}

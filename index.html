@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<link rel="stylesheet" href="/public/main.css">
+	<title>Go app for Sphere</title>
+</head>
+<body>
+	<div class="container">
+		<h1>Go webapp for Sphere</h1>
+		<form action="/save/" method="POST">
+		  <div class="form-row">
+				<div class="col-11">
+					<input type="text" required class="form-control" id="newItem" name="title">
+				</div>
+				<div class="col-1">
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</div>
+		  </div>
+		</form>
+		<ul class="list-group">
+		  {{ range .Todos }}
+				<li class="list-group-item">{{ .Title }}</li>
+			{{ end }}
+		</ul>
+		{{if .Todos}}
+			<a href="/clear/">Clear all</a>
+		{{end}}
+	</div>
+</body>
+</html>
