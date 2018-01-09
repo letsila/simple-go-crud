@@ -2,7 +2,7 @@
 
 ### What is this repository for? ###
 
-This is a simple Go webapp for my candidature at sphere.ms for the role of Go developer.
+This is a simple Go webapp, just to taste the interaction of MySQL with Go.
 
 ### Dependencies ###
 
